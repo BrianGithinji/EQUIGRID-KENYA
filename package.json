@@ -11,6 +11,8 @@
     "train-ml": "cd ml && python train_model.py"
   },
   "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "@tensorflow/tfjs": "^4.17.0",
     "leaflet": "^1.9.4",
     "react-leaflet": "^4.2.1",
@@ -78,18 +80,7 @@
     "tailwindcss": "4.1.12",
     "vite": "6.3.5"
   },
-  "peerDependencies": {
-    "react": "18.3.1",
-    "react-dom": "18.3.1"
-  },
-  "peerDependenciesMeta": {
-    "react": {
-      "optional": true
-    },
-    "react-dom": {
-      "optional": true
-    }
-  },
+
   "pnpm": {
     "overrides": {
       "vite": "6.3.5"

@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router";
-import { Home, Map, Zap, Database, Network } from "lucide-react";
+import { Home, Map, Zap, Database, Network, ExternalLink } from "lucide-react";
 
 const navItems = [
   { path: "/", label: "Dashboard", icon: Home },
@@ -18,7 +18,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex items-center gap-2">
-              <Zap className="w-8 h-8 text-green-600" />
+              <img src="/logo.png" alt="EquiGrid Kenya Logo" className="w-8 h-8" />
               <div>
                 <div className="font-bold text-xl text-gray-900">EquiGrid Kenya</div>
                 <div className="text-xs text-gray-500">AI-Powered Energy Equity Platform</div>
@@ -45,6 +45,15 @@ export default function Navigation() {
               </Link>
             );
           })}
+          <a
+            href="https://epraproject.ct.ws/?i=2"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-4 py-3 text-sm font-medium border-b-2 border-transparent text-gray-600 hover:text-gray-900 hover:border-gray-300 whitespace-nowrap transition-colors"
+          >
+            <ExternalLink className="w-4 h-4" />
+            EquiTariff
+          </a>
         </div>
       </div>
     </nav>
